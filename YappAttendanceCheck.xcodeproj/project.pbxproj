@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		B08F092E2442FA93001AA193 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F092D2442FA93001AA193 /* AppDelegate.swift */; };
-		B08F09302442FA93001AA193 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F092F2442FA93001AA193 /* SceneDelegate.swift */; };
 		B08F09322442FA93001AA193 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F09312442FA93001AA193 /* ViewController.swift */; };
 		B08F09352442FA93001AA193 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B08F09332442FA93001AA193 /* Main.storyboard */; };
 		B08F09372442FA94001AA193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B08F09362442FA94001AA193 /* Assets.xcassets */; };
@@ -21,7 +20,6 @@
 		892918DAE409F3F344FAE7A0 /* Pods-YappAttendanceCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YappAttendanceCheck.release.xcconfig"; path = "Target Support Files/Pods-YappAttendanceCheck/Pods-YappAttendanceCheck.release.xcconfig"; sourceTree = "<group>"; };
 		B08F092A2442FA93001AA193 /* YappAttendanceCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YappAttendanceCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08F092D2442FA93001AA193 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B08F092F2442FA93001AA193 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B08F09312442FA93001AA193 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B08F09342442FA93001AA193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B08F09362442FA94001AA193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,7 +54,6 @@
 				C79C45B6074847D275F83238 /* Pods-YappAttendanceCheck.debug.xcconfig */,
 				892918DAE409F3F344FAE7A0 /* Pods-YappAttendanceCheck.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -82,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				B08F092D2442FA93001AA193 /* AppDelegate.swift */,
-				B08F092F2442FA93001AA193 /* SceneDelegate.swift */,
 				B08F09312442FA93001AA193 /* ViewController.swift */,
 				B08F09332442FA93001AA193 /* Main.storyboard */,
 				B08F09362442FA94001AA193 /* Assets.xcassets */,
@@ -209,7 +205,6 @@
 			files = (
 				B08F09322442FA93001AA193 /* ViewController.swift in Sources */,
 				B08F092E2442FA93001AA193 /* AppDelegate.swift in Sources */,
-				B08F09302442FA93001AA193 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
