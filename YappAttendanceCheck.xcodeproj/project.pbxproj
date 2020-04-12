@@ -13,9 +13,12 @@
 		B08F09352442FA93001AA193 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B08F09332442FA93001AA193 /* Main.storyboard */; };
 		B08F09372442FA94001AA193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B08F09362442FA94001AA193 /* Assets.xcassets */; };
 		B08F093A2442FA94001AA193 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B08F09382442FA94001AA193 /* LaunchScreen.storyboard */; };
+		FC961395ACCFCA7DF9186233 /* Pods_YappAttendanceCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2EB6747917EFD1DCE7ABD3 /* Pods_YappAttendanceCheck.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A2EB6747917EFD1DCE7ABD3 /* Pods_YappAttendanceCheck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YappAttendanceCheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		892918DAE409F3F344FAE7A0 /* Pods-YappAttendanceCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YappAttendanceCheck.release.xcconfig"; path = "Target Support Files/Pods-YappAttendanceCheck/Pods-YappAttendanceCheck.release.xcconfig"; sourceTree = "<group>"; };
 		B08F092A2442FA93001AA193 /* YappAttendanceCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YappAttendanceCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08F092D2442FA93001AA193 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B08F092F2442FA93001AA193 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		B08F09362442FA94001AA193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B08F09392442FA94001AA193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B08F093B2442FA94001AA193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C79C45B6074847D275F83238 /* Pods-YappAttendanceCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YappAttendanceCheck.debug.xcconfig"; path = "Target Support Files/Pods-YappAttendanceCheck/Pods-YappAttendanceCheck.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC961395ACCFCA7DF9186233 /* Pods_YappAttendanceCheck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17CF973E705A0EB4E20E767F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A2EB6747917EFD1DCE7ABD3 /* Pods_YappAttendanceCheck.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B4B217DE1C906DAC077C252 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C79C45B6074847D275F83238 /* Pods-YappAttendanceCheck.debug.xcconfig */,
+				892918DAE409F3F344FAE7A0 /* Pods-YappAttendanceCheck.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B08F09212442FA93001AA193 = {
 			isa = PBXGroup;
 			children = (
 				B08F092C2442FA93001AA193 /* YappAttendanceCheck */,
 				B08F092B2442FA93001AA193 /* Products */,
+				4B4B217DE1C906DAC077C252 /* Pods */,
+				17CF973E705A0EB4E20E767F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B08F093E2442FA94001AA193 /* Build configuration list for PBXNativeTarget "YappAttendanceCheck" */;
 			buildPhases = (
+				281E9F958F13262DF8769F6F /* [CP] Check Pods Manifest.lock */,
 				B08F09262442FA93001AA193 /* Sources */,
 				B08F09272442FA93001AA193 /* Frameworks */,
 				B08F09282442FA93001AA193 /* Resources */,
+				DE2DEE4C2B990926DA5430FD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		281E9F958F13262DF8769F6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YappAttendanceCheck-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE2DEE4C2B990926DA5430FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YappAttendanceCheck/Pods-YappAttendanceCheck-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YappAttendanceCheck/Pods-YappAttendanceCheck-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YappAttendanceCheck/Pods-YappAttendanceCheck-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B08F09262442FA93001AA193 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		B08F093F2442FA94001AA193 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C79C45B6074847D275F83238 /* Pods-YappAttendanceCheck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +371,7 @@
 		};
 		B08F09402442FA94001AA193 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 892918DAE409F3F344FAE7A0 /* Pods-YappAttendanceCheck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

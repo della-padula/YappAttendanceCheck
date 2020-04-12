@@ -1,0 +1,6 @@
+framework module Pods_YappAttendanceCheck {
+  umbrella header "Pods-YappAttendanceCheck-umbrella.h"
+
+  export *
+  module * { export * }
+}
