@@ -7,4 +7,5 @@ target 'YappAttendanceCheck' do
 
   # Pods for YappAttendanceCheck
   pod 'Alamofire'
+  pod 'QRCodeReader.swift', '~> 10.1.0'
 end

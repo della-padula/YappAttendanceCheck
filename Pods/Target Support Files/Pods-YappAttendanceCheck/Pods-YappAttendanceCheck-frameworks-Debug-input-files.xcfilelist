@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-YappAttendanceCheck/Pods-YappAttendanceCheck-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/QRCodeReader.swift/QRCodeReader.framework
